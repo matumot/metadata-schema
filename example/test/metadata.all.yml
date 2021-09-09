@@ -1,0 +1,26 @@
+﻿data_info:
+  identifier:
+    pid: spring8.xxxxx
+  date:
+    create_time: '2020-05-19 18:15:10'
+    update_time: '2021-06-18 07:41:52'
+  facility: SPring-8
+  class_name: BL14B2
+sample:
+- chemical_formula: Ag-foil
+  name: Silver
+measurement:
+  method:
+    category: spectroscopy
+    sub_category: XAFS
+    absorption_edge: Ag K-edge
+  date:
+    start_time: '2016-04-12 00:54:00'
+    end_time: '2016-04-12 00:59:00'
+instrument:
+  slit:
+  - name: 4Dslit
+    vertical_size: 1.0
+    vertical_size_unit: mm
+    horizontal_size: 5.0
+    horizontal_size_unit: mm

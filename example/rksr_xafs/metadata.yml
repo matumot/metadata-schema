@@ -1,0 +1,289 @@
+data_info:
+  facility: Ritsumeikan-SR
+  beamline: BL-10
+  id: BL-10_P-K_008
+  related_id: null
+  date:
+    create_time: '2021-08-23 00:00:00'
+    update_time: null
+  comment: 
+sample:
+  chemical_formula: P
+  CAS_number: 7723-14-0
+  manufacturer: 
+  Product_number: 
+  sample_lot_number: 
+  additional_data: powder, on carbon tape
+measurement:
+  absorption_edge: P-K
+  energy_calibration:
+  - standard_sample: FePO4_nH2O
+    calibration_position: white line peak maximum
+    energy: 2153.01
+    energy_unit: eV
+  incident_angle: -3
+  incident_angle_unit: deg
+  tune_angle: 45
+  tune_angle_unit: deg
+  tune_energy: null
+  tune_energy_unit: null
+  data_points: 368
+  section:
+    section_number: 9
+    section_blocks:
+    - start_energy: 2070
+      start_energy_unit: eV
+      end_energy: 2135
+      end_energy_unit: eV
+      sampling_number: 21
+      delta_energy: 3.25
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2135
+      start_energy_unit: eV
+      end_energy: 2140
+      end_energy_unit: eV
+      sampling_number: 10
+      delta_energy: 0.5
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2140
+      start_energy_unit: eV
+      end_energy: 2159
+      end_energy_unit: eV
+      sampling_number: 125
+      delta_energy: 0.152
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2159
+      start_energy_unit: eV
+      end_energy: 2170
+      end_energy_unit: eV
+      sampling_number: 22
+      delta_energy: 0.5
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2170
+      start_energy_unit: eV
+      end_energy: 2200
+      end_energy_unit: eV
+      sampling_number: 30
+      delta_energy: 1
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2200
+      start_energy_unit: eV
+      end_energy: 2350
+      end_energy_unit: eV
+      sampling_number: 60
+      delta_energy: 2.5
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2350
+      start_energy_unit: eV
+      end_energy: 2500
+      end_energy_unit: eV
+      sampling_number: 40
+      delta_energy: 3.75
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2500
+      start_energy_unit: eV
+      end_energy: 2700
+      end_energy_unit: eV
+      sampling_number: 40
+      delta_energy: 5
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+    - start_energy: 2700
+      start_energy_unit: eV
+      end_energy: 2900
+      end_energy_unit: eV
+      sampling_number: 20
+      delta_energy: 10
+      delta_energy_unit: eV
+      waiting_time: 1
+      waiting_time_unit: s
+      dwelling_time: 4
+      dwelling_time_unit: s
+  start_ring_current: 148.5835
+  end_ring_current: 138.8705
+  ring_current_unit: mA
+  start_time: '2021-02-25 14:32:28'
+  end_time: '2021-02-25 15:07:47'
+instrument:
+  I0:
+    detector:
+    - type: Ni mesh
+      manufacturer: null
+      model_number: null
+      coating_element: Ni
+      aperture_ratio: 89
+      aperture_ratio_unit: '%'
+      applied_voltage: null
+      applied_voltage_unit: null
+    Ammeter:
+    - range: 200
+      range_unit: pA
+      manufacturer: KEITHLEY
+      model_number: 6514
+    additional_data: null
+  TEY:
+    Ammeter:
+    - range: 2
+      range_unit: nA
+      manufacturer: KEITHLEY
+      model_number: 6514
+    additional_data: null
+  PFY:
+    detector:
+    - type: SDD
+      manufacturer: Techno X
+      model_number: TXD2300H50
+      amp_gain: 3.34
+      amp_gain_unit: 'mV/keV'
+      peaking_time: 0.5e-6
+      peaking_time_unit: s
+      deadtime: 10
+      deadtime_unit: '%'
+      deadtime_setting_energy: 2144.5
+      deadtime_setting_energy_unit: eV
+      element_number: 1
+      ROI:
+      - ROI_energy_lower: 1.7
+        ROI_energy_upper: 2.25
+        ROI_energy_unit: keV
+      - ROI_energy_lower: 1.7
+        ROI_energy_upper: 2.05
+        ROI_energy_unit: keV
+      - ROI_energy_lower: 0.5
+        ROI_energy_upper: 5.0
+        ROI_energy_unit: keV
+    additional_data: null
+  PEY:
+    detector:
+    - type: null
+      manufacturer: null
+      model_number: null
+      applied_voltage_front: null
+      applied_voltage_front_unit: null
+      applied_voltage_end: null
+      applied_voltage_end_unit: null
+      battery_box_voltage: null
+      battery_box_voltage_unit: null
+      retarding_voltage: null
+      retarding_voltage_unit: null
+      deflection_voltage: null
+      deflection_voltage_unit: null
+    Ammeter:
+    - range: null
+      range_unit: null
+      manufacturer: null
+      model_number: null
+    additional_data: null
+  monochromator:
+    type: DCM
+    detail:
+    - crystal_plane: Ge(111)
+      d: 0.3266
+      d_unit: nm
+      material: null
+      groove_density: null
+      groove_density_unit: null
+      groove_depth: null
+      groove_depth_unit: null
+      deflection_angle: null
+      deflection_angle_unit: null
+  slit:
+  - name: null
+    vertical_size: null
+    vertical_size_unit: null
+    horizontal_size: null
+    horizontal_size_unit: null
+  filter: null
+  measurement_chamber_environment: Vac
+file:
+  file_name: 21022505.csv
+  raw_data_format:
+  - extension: csv
+    format: BL-10
+    columns:
+    - name: calculated angle
+      unit: deg
+    - name: observed angle
+      unit: deg
+    - name: photon energy
+      unit: eV
+    - name: I0
+      unit: cps
+    - name: PFY1
+      unit: cps
+    - name: PFY2
+      unit: cps
+    - name: PFY3
+      unit: cps
+    - name: TEY
+      unit: cps
+    - name: PEY
+      unit: cps
+    - name: Transmission
+      unit: cps
+    - name: Ring current
+      unit: mA
+  processed_data_format:
+  - extension: tey
+    format: Athena
+    columns:
+    - name: photon energy
+      unit: eV
+      formula: column[2]
+      input:
+        columns: raw_format_data[0].columns
+    - name: Normalized Intensity (TEY)
+      unit: null
+      formula: column[7]/column[3]
+      normalizing_process:
+      - BG_subtraction: -0.239456+0.000151411*column[2]
+        Normalization: 0.550898-0.000182899*column[2]+3.13690361e-008*column[2]^2
+      input:
+        columns: raw_format_data[0].columns
+  - extension: pfy
+    format: Athena
+    columns:
+    - name: photon energy
+      unit: eV
+      formula: column[2]
+      input:
+        columns: raw_format_data[0].columns
+    - name: Normalized Intensity (PFY3)
+      unit: null
+      formula: column[6]/column[3]
+      normalizing_process:
+      - BG_subtraction: -3.605628+0.00172296*column[2]
+        Normalization: -6.136838+0.00722642*column[2]-1.19293093e-006*column[2]^2
+      input:
+        columns: raw_format_data[0].columns

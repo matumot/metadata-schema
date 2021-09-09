@@ -1,0 +1,4 @@
+schema_path: ./schema/schema.json
+#schema_path: ./schema/schema.sp8_xafs.json
+#schema_path: ./schema/schema.rksr_xafs.json
+#schema_path: https://benten.spring8.or.jp/static/schema/benten-schema.json

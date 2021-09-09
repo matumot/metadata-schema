@@ -1,0 +1,138 @@
+data_info:
+  identifier:
+    pid: spring8.a0912e4c-3114-4fd6-af5f-e39519ce8833
+    register_name: /SPring-8/BL14B2/XAFS_Standard/Ag/K/111/Ag-foil
+    proposal_number: 2014S0000
+  date:
+    create_time: '2020-05-19 18:15:10'
+    update_time: '2021-06-18 07:41:52'
+  facility: SPring-8
+  class_name: BL14B2
+  disk_name: XAFS_Standard
+  title_ja: 標準試料
+  title: Standard Sample
+  access_rights: open
+  license:
+    name: CC BY-NC-SA 4.0
+  data_depositor:
+    name: Hironori Ofuchi
+    affiliation:
+      organization: JASRI
+  contact_name:
+    name: Industrial Application and Partnership Division
+    affiliation:
+      organization: JASRI
+    role: organization
+facility:
+  ring:
+    energy: 8.0
+    energy_unit: GeV
+    start_current: 99.5
+    start_current_unit: mA
+    end_current: 99.5
+    end_current_unit: mA
+    filling_pattern: 203 bunches
+    filling_pattern_mode: A
+sample:
+- chemical_formula: Ag-foil
+  lot_number: '34445605'
+  model_number: AG-403241
+  name: Silver
+  supplier: NILACO CORPORATION
+measurement:
+  method:
+    category: spectroscopy
+    sub_category: XAFS
+    absorption_edge: Ag K-edge
+    detection: Transmission( 2)
+  date:
+    start_time: '2016-04-12 00:54:00'
+    end_time: '2016-04-12 00:59:00'
+  scan_mode: angle axis (1)
+instrument:
+  slit:
+  - name: 4Dslit
+    vertical_size: 1.0
+    vertical_size_unit: mm
+    horizontal_size: 5.0
+    horizontal_size_unit: mm
+  xafs:
+    I0:
+      element_number: 1
+      element:
+      - type: Ion Chamber
+        gas: Ar 100%
+        HV: 1000.0
+        HV_unit: V
+        amp_gain: 10000000.0
+        amp_gain_unit: V/A
+    I1:
+      element_number: 1
+      element:
+      - type: Ion Chamber
+        gas: Ar 70% + Kr 30%
+        HV: 1000.0
+        HV_unit: V
+        amp_gain: 1000000.0
+        amp_gain_unit: V/A
+  monochrometer:
+    net_plane: Si(111)
+    distance: 3.13551
+    distance_unit: A
+    section:
+    - start_energy: 4.51
+      start_energy_unit: deg
+      step_energy: -6.0e-05
+      step_energy_unit: deg
+      end_energy: 4.19
+      end_energy_unit: deg
+      dwell_time: 50.0
+      dwell_time_unit: ms
+local:
+  measurement_time: 267.0
+  measurement_time_unit: sec
+  xafs_filename_list:
+  - Ag-K_Ag-foil_Si111_50ms_160412.dat
+  xafs_raw_data_format:
+  - extension: dat
+    format: PF9809
+    parameter:
+      D: monochrometer distance
+    columns:
+    - name: monochrometer angle (setting value of PC)
+      unit: deg
+    - name: monochrometer angle (encoder value)
+      unit: deg
+    - name: dwell time
+      unit: sec
+    - name: intensity I0
+      unit: count
+    - name: intensity I1
+      unit: count
+  xafs_processed_data_format:
+  - extension: ex3
+    format: Rex2000
+    columns:
+    - name: photon energy
+      unit: eV
+      formula: 12398/(2*D*math.sin(columns[1]))
+      input:
+        columns: xafs_raw_data_format[0].columns
+        D: xafs_raw_data_format[0].parameter.D
+    - name: absorption coefficient mu*t
+      formula: math.log(columns[3]/columns[4])
+      input:
+        columns: xafs_raw_data_format[0].columns
+  - extension: txt
+    format: Athena
+    columns:
+    - name: photon energy
+      unit: eV
+      formula: 12398/(2*D*math.sin(columns[1]))
+      input:
+        columns: xafs_raw_data_format[0].columns
+        D: xafs_raw_data_format[0].parameter.D
+    - name: absorption coefficient mu*t
+      formula: math.log(columns[3]/columns[4])
+      input:
+        columns: xafs_raw_data_format[0].columns
