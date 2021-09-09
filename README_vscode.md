@@ -16,7 +16,8 @@ BENTEN形式でのメタデータ記述 (yamlファイル)においては [Visua
 
 ![img](./fig/vscode-0.png)
 
-###　settings.jsonの編集
+
+### settings.jsonの編集
 
 * まず、左下の1で Settingsを選択する。
 * 2の上部の検索窓で settings と入力する。
