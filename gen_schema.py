@@ -182,8 +182,8 @@ def get_items(items_dict, required_dict, flag_flat_key=False):
                 if key_base == "root":
                     each_dict["$schema"] = "http://json-schema.org/draft-07/schema"
                     each_dict["type"]  = "object"
-                    each_dict["title"] = "FC BENTEN schema"
-                    each_dict["description"] = "FC BENTEN schema comprises the entire JSON document."
+                    each_dict["title"] = "metadata schema"
+                    each_dict["description"] = "metadata schema comprises the entire JSON document."
                 elif data_type == "object":
                     each_dict["$id"]  = "key:{}".format(key_base)
                     each_dict["type"] = "object"
